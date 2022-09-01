@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/aldiyespaskalisbirta.github.io/login-form/static/css/main.3732229e.css",
-    "main.js": "/aldiyespaskalisbirta.github.io/login-form/static/js/main.94705397.js",
-    "static/js/787.17e28425.chunk.js": "/aldiyespaskalisbirta.github.io/login-form/static/js/787.17e28425.chunk.js",
-    "index.html": "/aldiyespaskalisbirta.github.io/login-form/index.html",
-    "main.3732229e.css.map": "/aldiyespaskalisbirta.github.io/login-form/static/css/main.3732229e.css.map",
-    "main.94705397.js.map": "/aldiyespaskalisbirta.github.io/login-form/static/js/main.94705397.js.map",
-    "787.17e28425.chunk.js.map": "/aldiyespaskalisbirta.github.io/login-form/static/js/787.17e28425.chunk.js.map"
+    "main.css": "/login-form/static/css/main.3732229e.css",
+    "main.js": "/login-form/static/js/main.5a759e7d.js",
+    "static/js/787.17e28425.chunk.js": "/login-form/static/js/787.17e28425.chunk.js",
+    "index.html": "/login-form/index.html",
+    "main.3732229e.css.map": "/login-form/static/css/main.3732229e.css.map",
+    "main.5a759e7d.js.map": "/login-form/static/js/main.5a759e7d.js.map",
+    "787.17e28425.chunk.js.map": "/login-form/static/js/787.17e28425.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3732229e.css",
-    "static/js/main.94705397.js"
+    "static/js/main.5a759e7d.js"
   ]
 }

@@ -57,7 +57,7 @@
 }
 
 .login-form .form-inner .form-group .group-item input {
-  padding: 10px;
+  margin: 10px 0;
   background: transparent;
   color: #eaeaea;
   outline: none;
@@ -101,6 +101,6 @@
 
 @media (min-width: 768px) {
   .login-form .form-inner .form-group .group-item input {
-    padding: 10px 10rem;
+    width: 30rem;
   }
 }

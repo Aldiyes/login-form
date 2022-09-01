@@ -1,4 +1,10 @@
-.form-inner {
+.login-form {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form .form-inner {
   font-family: "Roboto Mono", monospace;
   background: #222;
   border-radius: 20px;
@@ -9,93 +15,92 @@
   box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
-.form-inner header {
+.login-form .form-inner header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 5rem;
-}
-.form-inner header h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 2rem;
-  color: #fff;
+  margin: 1rem;
 }
 
-.form-inner header i {
-  font-size: 2.5rem;
+.login-form .form-inner header h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 600;
+  color: #eaeaea;
 }
 
-.form-inner i {
-  color: #9d9d9d;
-  margin-right: 1rem;
+.login-form .form-inner header .icon {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #eaeaea;
 }
-.form-inner .form-group {
+
+.login-form .form-inner .form-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-form .form-inner .form-group .group-item {
   position: relative;
   display: flex;
   align-items: center;
-  flex-direction: row;
-  margin: 1rem 2rem;
-  width: 30rem;
-  border: 1px solid #909090;
-  border-radius: 4px;
-  padding: 0.8rem;
+  margin: 10px 0;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  box-sizing: none;
 }
 
-.form-inner .form-group span {
-  position: absolute;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.2rem;
-  margin-left: 2rem;
+.login-form .form-inner .form-group .group-item i {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #eaeaea;
+}
+
+.login-form .form-inner .form-group .group-item input {
+  padding: 10px;
+  background: transparent;
+  color: #eaeaea;
+  outline: none;
+  border: none;
+}
+
+.login-form .form-inner .form-group .group-item input:valid ~ span,
+.login-form .form-inner .form-group .group-item input:focus ~ span {
+  transform: translate(-30%, -90%) scale(0.8);
+  transition: 0.3s;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
   background: #222;
-  color: #adadad;
+  padding: 0 1rem;
+}
+.login-form .form-inner .form-group .group-item span {
+  position: absolute;
+  color: #eaeaea;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   pointer-events: none;
 }
 
-.form-inner .form-group input {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  background: transparent;
-  color: #eaeaea;
-  font-size: 1.2rem;
+.login-form .form-inner .form-group .group-item .fa-eye,
+.login-form .form-inner .form-group .group-item .fa-eye-slash {
+  position: absolute;
+  right: 0.1rem;
+  top: 0.9rem;
 }
 
-.form-inner .form-group input:focus ~ span,
-.form-inner .form-group input:valid ~ span {
-  transform: translate(-10%, -120%) scale(0.9);
-  transition: 0.4s;
-  border-right: 1px solid #eaeaea;
-  border-left: 1px solid #eaeaea;
-  padding: 0 8px;
-}
-
-.form-inner input[type="submit"] {
+.login-form .form-inner input[type="submit"] {
+  margin: 2.5rem;
+  padding: 0.5rem 2rem;
   background: transparent;
   border: 1px solid #eaeaea;
-  width: 10rem;
-  height: 3rem;
-  margin: 2rem;
-  border-radius: 30px;
-  outline: none;
-  font-weight: 600;
+  color: #eaeaea;
   letter-spacing: 1px;
-  color: #fff;
+  border-radius: 10px;
 }
 
-.form-inner .form-group .fa-eye {
-  margin-left: 1rem;
-}
-
-.form-inner .form-group .show-password {
-  display: flex;
-  align-items: center;
-}
-
-.form-inner .form-group .show-password i {
-  position: absolute;
-  right: 2px;
+@media (min-width: 768px) {
+  .login-form .form-inner .form-group .group-item input {
+    padding: 10px 10rem;
+  }
 }

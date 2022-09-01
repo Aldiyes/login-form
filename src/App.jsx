@@ -20,7 +20,7 @@ function App() {
         email: details.email,
       });
     } else {
-      setError("Details do not match!");
+      setError(alert("Salah akun GOBLOKK"));
     }
   };
 

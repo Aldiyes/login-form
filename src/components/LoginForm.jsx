@@ -37,19 +37,19 @@ const LoginForm = ({ Login, error }) => {
                 <Row className="form-group">
                   <Col xs={12} className="group-item">
                     <i className="fa-sharp fa-solid fa-user"></i>
-                    <input type="text" className="name" id="name" onChange={(e) => setDetails({ ...details, name: e.target.value })} value={details.name} required="required" />
+                    <input type="text" className="name" id="name" onChange={(e) => setDetails({ ...details, name: e.target.value })} value={details.name} required="required" autoComplete="off" />
                     <span>username</span>
                   </Col>
 
                   <Col xs={12} className="group-item">
                     <i className="fa-sharp fa-solid fa-envelope"></i>
-                    <input type="mail" className="mail" id="mail" onChange={(e) => setDetails({ ...details, email: e.target.value })} value={details.email} required="required" />
+                    <input type="mail" className="mail" id="mail" onChange={(e) => setDetails({ ...details, email: e.target.value })} value={details.email} required="required" autoComplete="off" />
                     <span>email</span>
                   </Col>
 
                   <Col xs={12} className="group-item">
                     <i className="fa-sharp fa-solid fa-key"></i>
-                    <input type={show ? "text" : "password"} className="password" id="password" onChange={(e) => setDetails({ ...details, password: e.target.value })} value={details.password} required="required" />
+                    <input type={show ? "text" : "password"} className="password" id="password" onChange={(e) => setDetails({ ...details, password: e.target.value })} value={details.password} required="required" autoComplete="off" />
                     <span>password</span>
                     <div className="show-password">
                       <i className={`fa-sharp fa-solid fa-eye eye ${show === true ? "d-none" : "d-flex"}`} onClick={handleShow}></i>

@@ -20,7 +20,7 @@ function App() {
         email: details.email,
       });
     } else {
-      setError(alert("Salah akun GOBLOKK"));
+      setError(alert("Maaf, akun yang anda masukkan tidak valid!!!"));
     }
   };
 
